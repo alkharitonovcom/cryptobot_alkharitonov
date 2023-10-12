@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>CryptoBot</title>
+        <link rel="stylesheet" href="/style.css" media="all" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="wrapper">
+                <div class="logo"><a href="/"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Use cases</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How to start</a></li>
+                    </ul>
+                </nav>
+                <div class="header_right">
+                    <button id="mode" class="mode_btn current_light"></button>
+                    <button class="btn">Get started</button>
+                </div>
+            </div>
+        </header>
+        <section class="hero">
+            <div class="wrapper">
+                <div class="hero_description">
+                    <h1>Crypto payments <br/>for <span>telegram bots</span></h1>
+                    <div class="description_btn">
+                        <p>Seamlessly accept crypto payments in your Telegram bots and services</p>
+                        <button class="btn">Get started</button>
+                    </div>
+                    <div class="bots">
+                        <div class="photo-bots">
+                            <img src="/images/ellipse-1.png" />
+                            <img src="/images/ellipse-2.png" />
+                            <img src="/images/ellipse-3.png" />
+                            <img src="/images/ellipse-5.png" />
+                            <img src="/images/ellipse-4.png" />
+                        </div>
+                        <p>Popular bots use Crypto Pay</p>
+                    </div>
+                </div>
+                <img src="/images/mockup.png" />
+            </div>
+        </section>
+        <section class="usecases">
+            <div class="usecases_slider">
+                <div class="usecases__item s1">
+                    <div class="wrapper">
+                        <div class="usecases__item_img"><img src="/images/usecase-1.png" /></div>
+                        <div class="usecases__item_info">
+                            <h2><strong>Instant Auto Sales:</strong> Boost conversion</h2>
+                            <p>Immediately deliver digital products and services to your users.</p>
+                            <a href="#" class="btn">Open API Docs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="usecases__item s2">
+                    <div class="wrapper">
+                        <div class="usecases__item_img"><img src="/images/usecase-2.png" /></div>
+                        <div class="usecases__item_info">
+                            <h2><strong>Channels integration:</strong> Seamless access</h2>
+                            <p>Automatically unlock exclusive content to your users.</p>
+                            <a href="#" class="btn">Open API Docs</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="usecases__item s3">
+                    <div class="wrapper">
+                        <div class="usecases__item_img"><img src="/images/usecase-3.png" /></div>
+                        <div class="usecases__item_info">
+                            <h2><strong>Endless customization</strong> with Webhooks</h2>
+                            <p>Receive successful payment notifications in real-time. Integrate to any scenario of your service.</p>
+                            <a href="#" class="btn">Open API Docs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="usecases_nav"><div class="current">01</div><div class="dots"></div><div class="all">03</div></div>
+        </section>
+        <section class="features">
+            <div class="wrapper">
+                <div class="features_item features_currencies">
+                    <div class="features_info">
+                        <div class="features-title">Accept a wide range of cryptocurrencies</div>
+                        <p>Bill any supported cryptocurrencies with asset parameter in <span>GetInvoice</span> method</p>
+                    </div>
+                    <div class="features_images currencies_images">
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/ETH.svg');"></div><span>ETH</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/USDT.svg');"></div><span>USDT</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/BTC.svg');"></div><span>BTC</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/TON.svg');"></div><span>TON</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/BNB.svg');"></div><span>BNB</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/TRX.svg');"></div><span>TRX</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/USDC.svg');"></div><span>USDC</span></div>
+                        <div class="currencies_images__item"><div class="coin_img" style="background-image:url('/images/LTC.svg');"></div><span>LTC</span></div>
+                    </div>
+                </div>
+                <div class="features_line">
+                    <div class="features_line__double">
+                        <div class="features_item features_start">
+                            <div class="features_info">
+                                <div class="features-title">One click to start</div>
+                                <p>Open <span>@CryptoBot</span>, go to <span>Crypto Pay</span> and tap Create App to get API Token</p>
+                            </div>
+                            <div class="start_images">
+                                <div class="create_button"><span>Create App</span></div>
+                            </div>
+                        </div>
+                        <div class="features_item features_exchange">
+                            <div class="features_info">
+                                <div class="features-title">Real-time <br/>exchange rates</div>
+                                <p>Request up to date currency rate with the <span>getExchangeRates</span> API method</p>
+                            </div>
+                            <div class="exchange_images">
+                                <div class="exchange_images_left">
+                                    <div class="exchange_images__item"><div class="coin_img" style="background-image:url('/images/USDT.svg');"></div></div>
+                                    <div class="exchange_images__item"><div class="coin_img" style="background-image:url('/images/BTC.svg');"></div></div>
+                                    <div class="exchange_images__item"><div class="coin_img" style="background-image:url('/images/TON.svg');"></div></div>
+                                </div>
+                                <div class="exchange_images_right">
+                                    <div class="exchange_images__item"><div class="coin_img" style="background-image:url('/images/US.svg');background-size: 130%;"></div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="features_item features_statisctics">
+                        <div class="features_info">
+                            <div class="features-title">Payment statistics</div>
+                            <p>Open <span>@CryptoBot</span>, go to <span>Crypto Pay</span> and <span>My Apps</span>, App Name to get Statistics</p>
+                        </div>
+                        <div class="statisctics_images">
+                            <div class="statisctics_images__item" style="background-image:url('/images/stats-1.jpg');"></div>
+                            <div class="statisctics_images__item" style="background-image:url('/images/stats-2.jpg');"></div>
+                            <div class="statisctics_images__item" style="background-image:url('/images/stats-3.jpg');"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="features_line">
+                    <div class="features_item features_send">
+                        <div class="features_info">
+                            <div class="features-title">Send coins to users</div>
+                            <p>Automate payouts to users with <span>transfer</span> API method</p>
+                        </div>
+                        <div class="send_images">
+                            <div class="send_images__item" style="background-image:url('/images/send-1.png');"></div>
+                            <div class="send_images__item" style="background-image:url('/images/send-2.png');"></div>
+                            <div class="send_images__item" style="background-image:url('/images/send-3.png');"></div>
+                        </div>
+                    </div>
+                    <div class="features_item features_anonymous">
+                        <div class="features_info">
+                            <div class="features-title">Anonymous payments</div>
+                            <p>Use allow_anonymous parameter in <span>createInvoice</span> method to give user an option to remain private</p>
+                        </div>
+                        <div class="anonymous_images">
+                            <div class="anonymous_images__item" style="background-image:url('/images/anon-1.png');"></div>
+                            <div class="anonymous_images__item" style="background-image:url('/images/anon-2.png');"></div>
+                            <div class="anonymous_images__item" style="background-image:url('/images/anon-3.png');"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="wrapper">
+                <h2>Quick start using <span>Crypto Pay</span></h2>
+                <div class="step">
+                    <div class="step__info">
+                        <div class="step__info_number">1</div>
+                        <div class="step__info_text">
+                            <h3>Authorizing your app</h3>
+                            <ol>
+                                <li>Open <strong>@CryptoBot</strong></li>
+                                <li>Go to <strong>Crypto Pay</strong></li>
+                                <li>Tap <strong>Create App</strong></li>
+                                <li>Get <strong>API Token</strong></li>
+                            </ol>
+                        </div>
+                    </div>
+                    <div class="step__image"><img src="/images/step-1.png" /></div>
+                </div>
+                <div class="step">
+                    <div class="step__info">
+                        <div class="step__info_number">2</div>
+                        <div class="step__info_text">
+                            <h3>Crypto Pay API Request</h3>
+                            <p>Requests are only served over HTTPS To pass parameters use:</p>
+                            <ul>
+                                <li><strong>URL query string</strong></li>
+                                <li><strong>application/json </strong></li>
+                                <li><strong>application/x-www-form-urlencoded</strong></li>
+                                <li><strong>multipart/form-data</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step__image"><img src="/images/step-2.png" /></div>
+                </div>
+                <div class="step">
+                    <div class="step__info">
+                        <div class="step__info_number">3</div>
+                        <div class="step__info_text">
+                            <h3>Getting updates</h3>
+                            <p>There are two ways of receiving updates for your app:</p>
+                            <ul>
+                                <li><strong>getInvoices</strong> method to get a list of created invoices.</li>
+                                <li><strong>Webhooks</strong> to receive updates in realtime.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="step__image"><img src="/images/step-3.png" /></div>
+                </div>
+            </div>
+        </section>
+        <section class="api">
+            <div class="wrapper">
+                <div class="api_info">
+                    <div class="api_info__text">
+                        <h2>Crypto Pay API</h2>
+                        <p>Explore available methods and types and integrate them in any programming language.</p>
+                        <a href="#" class="btn secondary2">Open API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="community">
+            <div class="wrapper">
+                <h2>Join dev community</h2>
+                <p>Connect with bot developers and explore the possibilities our crypto payments service unlocks.</p>
+                <div class="libraries">
+                    <div class="libraries__item"><div class="lib_img" style="background-image:url('/images/JS.svg');"></div><span>crypto-pay-api</span></div>
+                    <div class="libraries__item"><div class="lib_img" style="background-image:url('/images/NET.svg');"></div><span>CryptoPay</span></div>
+                    <div class="libraries__item"><div class="lib_img" style="background-image:url('/images/php.svg');"></div><span>crypto-pay-api</span></div>
+                    <div class="libraries__item"><div class="lib_img" style="background-image:url('/images/Python.svg');"></div><span>aiocrypto<wbr/>pay</span></div>
+                    <div class="libraries__item"><div class="lib_img" style="background-image:url('/images/go.svg');"></div><span>cryptobot-sdk-golang</span></div>
+                </div>
+                <a href="#" class="btn">Open Devs chat</a>
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="logo"><a href="/"></a></div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Use cases</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">How to start</a></li>
+                    </ul>
+                </nav>
+                <button class="btn secondary2">Get started</button>
+                <div class="copyright">©2023 Crypto Bot</div>
+            </div>
+        </footer>
+        <link rel="stylesheet" href="/slick/slick.css" media="all" />
+        <link rel="stylesheet" href="/slick/slick-theme.css" media="all" />
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script type="text/javascript" src="/slick/slick.min.js"></script>
+        <script type="text/javascript" src="/scripts.js"></script>
+    </body>
+</html>

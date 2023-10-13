@@ -523,17 +523,34 @@ section.features {
      background: url(/images/exchange_btn.svg) center / contain no-repeat;
      transform: translate(-19px, -50%);
 }
-.exchange_images_left .exchange_images__item{
+.exchange_images_left .exchange_images__item {
      position: absolute;
      border: 3px solid var(--color-gray-border);
      border-radius: 56px;
      z-index: 5;
+     background: linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%);
 }
 .exchange_images_left .exchange_images__item:nth-of-type(1) {
      transform: translateX(-66%);
+     background: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
 }
 .exchange_images_left .exchange_images__item:nth-of-type(2) {
      transform: translateX(-33%);
+     background: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
+}
+.exchange_images_left .exchange_images__item:nth-of-type(1) .coin_img,
+.exchange_images_left .exchange_images__item:nth-of-type(2) .coin_img {
+     opacity: 0;
+}
+.exchange_images__item {
+     border-radius: 900px;
+     overflow: hidden;
+}
+.exchange_images__item .coin_img.usdt {
+     background: linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
+}
+.exchange_images__item .coin_img.btc {
+     background: linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
 }
 .statisctics_images {
      position: relative;
@@ -889,6 +906,9 @@ Apaptive styles
           justify-content: center;
           gap: 24px;
      }
+     footer nav ul li a{
+          color: var(--color-white);
+     }
      section.hero .wrapper {
           flex-direction: row;
           justify-content: space-between;
@@ -1124,6 +1144,21 @@ Apaptive styles
      .features_exchange:hover .exchange_images_left .exchange_images__item:nth-of-type(1) {
           animation: firstcoin 3s ease;
      }
+     .features_exchange:hover .exchange_images_left .exchange_images__item:nth-of-type(3) .coin_img {
+          animation: coin_img_ton 3s ease;
+     }
+     .features_exchange:hover .exchange_images_left .exchange_images__item:nth-of-type(2) .coin_img {
+          animation: coin_img_btc 3s ease;
+     }
+     .features_exchange:hover .exchange_images_left .exchange_images__item:nth-of-type(1) .coin_img{
+          animation: coin_img_usdt 3s ease;
+     }
+     /*
+     .exchange_images__item .coin_img.btc {
+          background: url('/images/USDT.svg'), linear-gradient(25deg, #8DDAD5 -22.31%, #1BA27A 65.28%);
+          background: url('/images/BTC.svg'), linear-gradient(30deg, #FF930F -50.58%, #FBC411 93.3%);
+               background: url('/images/TON.svg'),  linear-gradient(211deg, #04BEFE -2.24%, #4481EB 108.4%);
+     } */
      @keyframes lastcoin {
           from {
                z-index: 5;
@@ -1152,6 +1187,23 @@ Apaptive styles
           to {
                transform: translateX(0);
                z-index: 5;
+          }
+     }
+     @keyframes coin_img_ton {
+          from {
+               opacity: 1;
+          }
+          10% {
+               opacity: 0;
+          }
+          76% {
+               opacity: 0;
+          }
+          99% {
+               opacity: 1;
+          }
+          to {
+               opacity: 1;
           }
      }
      @keyframes middlecoin {
@@ -1184,6 +1236,23 @@ Apaptive styles
                transform: translateX(-33%);
           }
      }
+     @keyframes coin_img_btc {
+          from {
+               opacity: 0;
+          }
+          10% {
+               opacity: 0;
+          }
+          33% {
+               opacity: 1;
+          }
+          43% {
+               opacity: 0;
+          }
+          to {
+               opacity: 0;
+          }
+     }
      @keyframes firstcoin {
           from {
                z-index: 5;
@@ -1212,6 +1281,29 @@ Apaptive styles
           to {
                z-index: 4;
                transform: translateX(-66%);
+          }
+     }
+     @keyframes coin_img_usdt {
+          from {
+               opacity: 0;
+          }
+          10% {
+               opacity: 0;
+          }
+          33% {
+               opacity: 0;
+          }
+          43% {
+               opacity: 0;
+          }
+          66% {
+               opacity: 1;
+          }
+          76% {
+               opacity: 0;
+          }
+          to {
+               opacity: 0;
           }
      }
      .features_send:hover .send_images__item:nth-of-type(1) {

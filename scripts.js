@@ -23,5 +23,10 @@ $(document).ready(function(){
 			top = $(id).offset().top;
 			$('body,html').animate({scrollTop: top}, 500);
 		}
-	});
+     });
+     $("#mode").on("click", function () {
+          $(this).toggleClass('dark_on');
+          $('body').toggleClass('dark');
+          $('.header_right .btn').toggleClass('secondary2');
+     });
 });

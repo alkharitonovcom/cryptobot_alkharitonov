@@ -16,4 +16,12 @@ $(document).ready(function(){
           let num = Number(dataId) + 1;
           $('.usecases_nav .current').text('0' + num);
      });
+     $("a[href^='#']").on("click", function (event) {
+		if (!$(this).hasClass("fancybox-inline")) {
+			event.preventDefault();
+			var id  = $(this).attr('href'),
+			top = $(id).offset().top;
+			$('body,html').animate({scrollTop: top}, 500);
+		}
+	});
 });
